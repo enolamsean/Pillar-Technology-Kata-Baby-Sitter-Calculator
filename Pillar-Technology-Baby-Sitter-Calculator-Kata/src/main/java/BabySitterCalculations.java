@@ -74,17 +74,26 @@ public class BabySitterCalculations {
     public int Get_End_Time() {
         return endTime;
     }
-/*
-    public boolean Family_A_Calculations() {
-        return false;
+
+    public int Family_A_Calculations( int startTime, int endTime) {
+        int pay = 0;
+        if (endTime <= 23) {
+            pay = (endTime - startTime) * 15;
+
+        } else if (startTime < 23 && endTime > 23) {
+            pay = ((23 - startTime) * 15) + ((endTime - 23) * 20);
+        } else if (startTime > 23 && endTime > 23) {
+            pay = (endTime - startTime) * 20;
+
+        }
+        return pay;
     }
 
-    public boolean Family_B_Calculations() {
-        return true;
+
+    public int Family_B_Calculations() {
     }
 
-    public boolean Family_C_Calculations() {
-        return false;
-    }*/
+    public int Family_C_Calculations() {
+    }
 }
 

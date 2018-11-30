@@ -36,12 +36,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2068" />
+          <entry key="java" value="2297" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2068" />
+          <entry key="JAVA" value="2297" />
         </counts>
       </usages-collector>
     </session>
@@ -63,14 +63,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/BabySitterCalculations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="235">
+              <caret line="77" column="36" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2671#2672#0" expanded="true" />
                 <element signature="e#2711#2712#0" expanded="true" />
                 <element signature="e#2749#2750#0" expanded="true" />
                 <element signature="e#2787#2788#0" expanded="true" />
+                <element signature="e#2760#2761#0" expanded="true" />
+                <element signature="e#2787#2788#0" expanded="true" />
+                <element signature="e#2833#2834#0" expanded="true" />
+                <element signature="e#2861#2862#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/BabySitterCalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="63" column="108" lean-forward="true" selection-start-line="63" selection-start-column="108" selection-end-line="63" selection-end-column="108" />
+            <state relative-caret-position="256">
+              <caret line="72" column="24" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -420,8 +424,8 @@
         <option value="$PROJECT_DIR$/src/test/java/Can_Do_Calculations_Here.java" />
         <option value="$PROJECT_DIR$/../code_Retreat/src/test/java/GameOfLifeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/BabySitterCalculator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BabySitterCalculatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/BabySitterCalculations.java" />
+        <option value="$PROJECT_DIR$/src/test/java/BabySitterCalculatorTest.java" />
       </list>
     </option>
   </component>
@@ -475,7 +479,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543615426267" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543616217463" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -505,7 +509,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BabySitterCalculatorTest.If_Start_Or_End_Time_Input_Is_Incorrect_Format_Throw_Error_Message">
+  <component name="RunManager" selected="JUnit.BabySitterCalculatorTest.Test_Family_A_Calculations">
     <configuration name="BabySitterCalculatorTest.If_End_Time_Input_Is_Incorrect_Format_Throw_Error_Message" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Pillar-Technology-Baby-Sitter-Calculator-Kata_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -536,11 +540,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BabySitterCalculatorTest.If_Start_Time_Input_Earlier_Than_Five_PM_Return_Error" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BabySitterCalculatorTest.Test_Family_A_Calculations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Pillar-Technology-Baby-Sitter-Calculator-Kata_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BabySitterCalculatorTest" />
-      <option name="METHOD_NAME" value="If_Start_Time_Input_Earlier_Than_Five_PM_Return_Error" />
+      <option name="METHOD_NAME" value="Test_Family_A_Calculations" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -557,19 +561,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BabySitterCalculatorTest.If_Start_Time_Input_Earlier_Than_Five_PM_Return_Error" />
       <item itemvalue="JUnit.BabySitterCalculatorTest.If_End_Time_Input_Later_Than_Four_AM_Return_Error" />
       <item itemvalue="JUnit.BabySitterCalculatorTest.When_Family_Input_Is_Number_Return_Error" />
       <item itemvalue="JUnit.BabySitterCalculatorTest.If_End_Time_Input_Is_Incorrect_Format_Throw_Error_Message" />
       <item itemvalue="JUnit.BabySitterCalculatorTest.If_Start_Or_End_Time_Input_Is_Incorrect_Format_Throw_Error_Message" />
+      <item itemvalue="JUnit.BabySitterCalculatorTest.Test_Family_A_Calculations" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BabySitterCalculatorTest.Test_Family_A_Calculations" />
         <item itemvalue="JUnit.BabySitterCalculatorTest.If_Start_Or_End_Time_Input_Is_Incorrect_Format_Throw_Error_Message" />
         <item itemvalue="JUnit.BabySitterCalculatorTest.If_End_Time_Input_Is_Incorrect_Format_Throw_Error_Message" />
         <item itemvalue="JUnit.BabySitterCalculatorTest.When_Family_Input_Is_Number_Return_Error" />
         <item itemvalue="JUnit.BabySitterCalculatorTest.If_End_Time_Input_Later_Than_Four_AM_Return_Error" />
-        <item itemvalue="JUnit.BabySitterCalculatorTest.If_Start_Time_Input_Earlier_Than_Five_PM_Return_Error" />
       </list>
     </recent_temporary>
   </component>
@@ -584,9 +588,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BabySitterCalculatorTest_Test_Calculator_Start_Time_Exists - 2018.11.30 at 16h 25m 48s.xml">
-      <configuration name="BabySitterCalculatorTest.Test_Calculator_Start_Time_Exists" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BabySitterCalculatorTest_Test_Calculator_End_Time_Exists - 2018.11.30 at 16h 27m 38s.xml">
       <configuration name="BabySitterCalculatorTest.Test_Calculator_End_Time_Exists" configurationId="JUnit" />
     </history-entry>
@@ -614,6 +615,9 @@
     <history-entry file="BabySitterCalculatorTest_If_Start_Or_End_Time_Input_Is_Incorrect_Format_Throw_Error_Message - 2018.11.30 at 17h 00m 05s.xml">
       <configuration name="BabySitterCalculatorTest.If_Start_Or_End_Time_Input_Is_Incorrect_Format_Throw_Error_Message" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BabySitterCalculatorTest_If_Start_Or_End_Time_Input_Is_Incorrect_Format_Throw_Error_Message - 2018.11.30 at 17h 02m 03s.xml">
+      <configuration name="BabySitterCalculatorTest.If_Start_Or_End_Time_Input_Is_Incorrect_Format_Throw_Error_Message" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -624,7 +628,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10085837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" />
@@ -711,22 +715,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/BabySitterCalculations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="235">
+          <caret line="77" column="36" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2671#2672#0" expanded="true" />
             <element signature="e#2711#2712#0" expanded="true" />
             <element signature="e#2749#2750#0" expanded="true" />
             <element signature="e#2787#2788#0" expanded="true" />
+            <element signature="e#2760#2761#0" expanded="true" />
+            <element signature="e#2787#2788#0" expanded="true" />
+            <element signature="e#2833#2834#0" expanded="true" />
+            <element signature="e#2861#2862#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BabySitterCalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="63" column="108" lean-forward="true" selection-start-line="63" selection-start-column="108" selection-end-line="63" selection-end-column="108" />
+        <state relative-caret-position="256">
+          <caret line="72" column="24" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

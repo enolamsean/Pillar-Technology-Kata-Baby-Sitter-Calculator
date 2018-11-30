@@ -67,19 +67,14 @@ public class BabySitterCalculatorTest {
         assertEquals("Error - please enter a time in numeric HH:MM am/pm format", testCalculator.End_Time_Input("3:00"));
     }
 
-
-  /*  @Test
-    public void Test_Calculator_Setter_Methods() {
+    @Test
+    public void Test_Family_A_Calculations() {
         BabySitterCalculations testCalculator = new BabySitterCalculations();
-        assertEquals(17, testCalculator.Set_Start_Time());
-        assertTrue(testCalculator.Set_End_Time());
+        assertEquals(190, testCalculator.Family_A_Calculations(17, 28));
+        assertEquals(75, testCalculator.Family_A_Calculations(22, 26));
+        assertEquals(75, testCalculator.Family_A_Calculations(17, 22));
+        assertEquals(60, testCalculator.Family_A_Calculations(24, 27));
+        assertEquals(90, testCalculator.Family_A_Calculations(17, 23));
     }
 
-    @Test
-    public void Test_Calculator_Getter_Methods() {
-        BabySitterCalculations testCalculator = new BabySitterCalculations();
-        assertTrue(testCalculator.Get_Start_Time());
-        assertTrue(testCalculator.Get_End_Time());
-
-    }*/
 }
