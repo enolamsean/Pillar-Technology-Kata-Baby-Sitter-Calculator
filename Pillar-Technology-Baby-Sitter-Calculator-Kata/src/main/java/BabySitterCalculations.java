@@ -90,10 +90,31 @@ public class BabySitterCalculations {
     }
 
 
-    public int Family_B_Calculations() {
+    public int Family_B_Calculations( int startTime, int endTime) {
+        int pay = 0;
+        if (endTime <= 22) {
+            pay = (endTime - startTime) * 12;
+        } else if (startTime < 22 && endTime > 22) {
+            pay = ((22 - startTime) * 12) + 16 + ((endTime - 24) * 16);
+            if (endTime > 22 && endTime < 24) {
+                pay = ((22 - startTime) * 12) + ((24 - endTime) * 8);
+            }
+        } else if (startTime >= 22 && endTime < 24) {
+            pay = ((startTime - 22) * 8) + ((endTime - 22) * 8);
+        } else if (startTime >= 22 && endTime > 24) {
+            pay = ((24 - startTime) * 8) + ((endTime - 24) * 16);
+            if (startTime >= 24) {
+                pay = (endTime - startTime) * 16;
+            }
+        } else if (startTime < 22 && endTime < 24) {
+            pay = ((22 - startTime) * 12) + ((24 - endTime) * 8);
+        }
+        return pay;
     }
 
-    public int Family_C_Calculations() {
-    }
+
+    /*public int Family_C_Calculations() {
+        return ;
+    }*/
 }
 

@@ -77,4 +77,15 @@ public class BabySitterCalculatorTest {
         assertEquals(90, testCalculator.Family_A_Calculations(17, 23));
     }
 
+    @Test
+    public void Test_Family_B_Calculations() {
+        BabySitterCalculations testCalculator = new BabySitterCalculations();
+        assertEquals(140, testCalculator.Family_B_Calculations(17, 28));
+        assertEquals(48, testCalculator.Family_B_Calculations(22, 26));
+        assertEquals(60, testCalculator.Family_B_Calculations(17, 22));
+        assertEquals(48, testCalculator.Family_B_Calculations(24, 27));
+        assertEquals(68, testCalculator.Family_B_Calculations(17, 23));
+        assertEquals(44, testCalculator.Family_B_Calculations(19, 23));
+    }
+
 }
