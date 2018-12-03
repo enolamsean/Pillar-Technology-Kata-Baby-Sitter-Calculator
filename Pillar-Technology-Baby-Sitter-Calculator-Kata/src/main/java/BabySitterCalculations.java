@@ -1,4 +1,5 @@
 import java.text.DateFormat;
+import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
@@ -7,43 +8,51 @@ import java.util.Date;
 public class BabySitterCalculations {
     //Declaring variables
     int startTime, endTime;
-    static DateFormat time_to_date = new SimpleDateFormat("hh:mm aa");
+    double pay;
+    String Family, startTimeString, endTimeString;
+    DateFormat time_to_date = new SimpleDateFormat("hh:mm aa");
+    Scanner input = new Scanner(System.in);
 
-    public static String Family_Input(String inputString) {
-        String Family = inputString;
-        if (!Family.equalsIgnoreCase("A") && !Family.equalsIgnoreCase("B") && !Family.equalsIgnoreCase("C")) {
-            return "Error - Please enter family A, B, or C.";
-        }
-        return inputString;
+
+    public void Family_Input() {
+        do {
+            System.out.print("Enter the family: ");
+            Family = input.nextLine();
+            if (!Family.equalsIgnoreCase("A") && !Family.equalsIgnoreCase("B") && !Family.equalsIgnoreCase("C")) {
+                System.out.print("Error - Please enter family A, B, or C.");
+            }
+        } while (!Family.equalsIgnoreCase("A") && !Family.equalsIgnoreCase("B") && !Family.equalsIgnoreCase("C"));
     }
 
-    public String Start_Time_Input(String inputString) throws ParseException {
+    public void Start_Time_Input() throws ParseException {
         do {
             try {
-                Date STime = time_to_date.parse(inputString);
+                System.out.print("Enter the start time (HH:MM am): ");
+                startTimeString = input.nextLine();
+                Date STime = time_to_date.parse(startTimeString);
                 Set_Start_Time(STime);
                 if (STime.equals(time_to_date) || Get_Start_Time() < 17 || Get_Start_Time() > 28) {
-                    return "Error - Baby sitter can only work between 5:00 pm and 4:00 am";
+                    System.out.println("Error - Baby sitter can only work between 5:00 pm and 4:00 am");
                 }
             } catch (ParseException e) {
-                return "Error - please enter a time in numeric HH:MM am/pm format";
+                System.out.println("Error - please enter a time in numeric HH:MM am/pm format");
             }
-            return inputString;
         } while (Get_Start_Time() < 17 || Get_Start_Time() > 28);
     }
 
-    public String End_Time_Input(String InputString) throws ParseException {
+    public void End_Time_Input() throws ParseException {
         do {
             try {
-                Date ETime = time_to_date.parse(InputString);
+                System.out.print("Enter the end time (HH:MM am): ");
+                endTimeString = input.nextLine();
+                Date ETime = time_to_date.parse(endTimeString);
                 Set_End_Time(ETime);
                 if (ETime.equals(time_to_date) || Get_End_Time() < 17 || Get_End_Time() > 28) {
-                    return "Error - Baby sitter can only work between 5:00 pm and 4:00 am";
+                    System.out.print("Error - Baby sitter can only work between 5:00 pm and 4:00 am");
                 }
             } catch (ParseException e) {
-                return "Error - please enter a time in numeric HH:MM am/pm format";
+                System.out.print("Error - please enter a time in numeric HH:MM am/pm format");
             }
-            return InputString;
         } while (Get_End_Time() < 17 || Get_End_Time() > 28);
     }
 
@@ -66,7 +75,6 @@ public class BabySitterCalculations {
         }
     }
 
-
     public int Get_Start_Time() {
         return startTime;
     }
@@ -75,8 +83,11 @@ public class BabySitterCalculations {
         return endTime;
     }
 
-    public int Family_A_Calculations( int startTime, int endTime) {
-        int pay = 0;
+    public String Get_Family() {
+        return Family;
+    }
+
+    public double Family_A_Calculations(int startTime, int endTime) {
         if (endTime <= 23) {
             pay = (endTime - startTime) * 15;
 
@@ -90,8 +101,7 @@ public class BabySitterCalculations {
     }
 
 
-    public int Family_B_Calculations( int startTime, int endTime) {
-        int pay = 0;
+    public double Family_B_Calculations(int startTime, int endTime) {
         if (endTime <= 22) {
             pay = (endTime - startTime) * 12;
         } else if (startTime < 22 && endTime > 22) {
@@ -113,8 +123,22 @@ public class BabySitterCalculations {
     }
 
 
-    /*public int Family_C_Calculations() {
-        return ;
-    }*/
+    public double Family_C_Calculations(int startTime, int endTime) {
+        if (endTime <= 21) {
+            pay = (endTime - startTime) * 21;
+        } else if (endTime >= 21 && startTime >= 21) {
+            pay = (endTime - startTime) * 15;
+        } else if (startTime < 21 && endTime >= 21) {
+            pay = ((21 - startTime) * 21) + ((endTime - 21) * 15);
+        }
+        return pay;
+    }
+
+    public void output(double pay){
+        DecimalFormat dollars = new DecimalFormat("$##,###.00");
+        System.out.println("The total for the amount owed is: " + dollars.format(pay));
+        /*return"The total for the amount owed is: " + dollars.format(pay);*/
+    }
+
 }
 
