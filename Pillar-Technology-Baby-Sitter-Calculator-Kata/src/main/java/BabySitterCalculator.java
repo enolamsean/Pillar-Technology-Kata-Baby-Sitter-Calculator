@@ -6,6 +6,8 @@ public class BabySitterCalculator {
         String Family;
         int startTime, endTime;
         double pay = 0;
+
+        //program body
         calculator.Family_Input();
         calculator.Start_Time_Input();
         calculator.End_Time_Input();
@@ -20,6 +22,8 @@ public class BabySitterCalculator {
         } else if (Family.equals("C")) { 
             calculator.Family_C_Calculations(startTime, endTime);
         }
+
+        //program output
         calculator.output(pay);
 
     }
